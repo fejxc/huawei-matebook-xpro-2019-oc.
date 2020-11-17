@@ -1,0 +1,24 @@
+{
+  "title": "F18 to mirror display by Laozhiang",
+  "rules": [
+      {
+        "description": "F18 to mirror display by Laozhiang",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "f18"
+		    },
+            "to": [
+              {
+                "key_code": "display_brightness_decrement",
+                "modifiers": [
+                  "left_command"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "F19 to Switch WiFi On/Off by Laozhiang",
+  "rules": [
+      {
+        "description": "F19 to Switch WiFi On/Off by Laozhiang",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "f19"
+		    },
+            "to": [
+              {
+                  "shell_command": "if [[ `networksetup -getairportpower en0` == *On ]];then   networksetup -setairportpower en0 off; else  networksetup -setairportpower en0 on; fi"
+              }
+            ]
+          }
+        ]
+      }
+  ]
+}

@@ -1,0 +1,3 @@
+修复耳机无人声问题
+install.command安装
+uninstall.command卸载

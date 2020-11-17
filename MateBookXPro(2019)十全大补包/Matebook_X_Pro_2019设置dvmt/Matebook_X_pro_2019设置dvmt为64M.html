@@ -1,0 +1,402 @@
+<!DOCTYPE html><html><head>
+      <title>Matebook_X_pro_2019&#x8BBE;&#x7F6E;dvmt&#x4E3A;64M</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/zzz3z/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.1/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="matebook-x-pro-2019-%E8%AE%BE%E7%BD%AE-dvmt64m">Matebook X pro 2019 &#x8BBE;&#x7F6E; dvmt=64M</h1>
+
+<h2 class="mume-header" id="%E6%8F%90%E9%86%92-%E5%A6%82%E9%9D%9E%E5%BF%85%E9%A1%BB%E5%A4%96%E6%8E%A54k%E4%B8%8D%E5%BF%85%E8%BF%9B%E8%A1%8C%E8%AF%A5%E6%93%8D%E4%BD%9C">&#x63D0;&#x9192;: &#x5982;&#x975E;&#x5FC5;&#x987B;&#x5916;&#x63A5;4K,&#x4E0D;&#x5FC5;&#x8FDB;&#x884C;&#x8BE5;&#x64CD;&#x4F5C;</h2>
+
+<h2 class="mume-header" id="%E6%8F%90%E9%86%92-%E8%AF%A5%E8%AF%B4%E6%98%8E%E4%BB%85%E4%BB%85%E9%92%88%E5%AF%B9matebook-x-pro-2019">&#x63D0;&#x9192;: &#x8BE5;&#x8BF4;&#x660E;&#x4EC5;&#x4EC5;&#x9488;&#x5BF9;Matebook X pro 2019</h2>
+
+<h2 class="mume-header" id="%E6%8F%90%E9%86%92-%E8%AF%A5%E6%93%8D%E4%BD%9C%E4%B8%80%E5%AE%9A%E8%A6%81%E5%9C%A8%E8%87%AA%E5%B7%B1%E6%9C%BA%E5%99%A8%E4%B8%8A%E8%BF%9B%E8%A1%8C%E4%BD%BF%E7%94%A8%E4%BB%96%E4%BA%BA%E4%BF%AE%E6%94%B9%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C%E6%96%87%E4%BB%B6%E6%9C%89%E5%8F%AF%E8%83%BD%E5%AF%BC%E8%87%B4%E6%9C%BA%E5%99%A8%E5%8F%98%E7%A0%96">&#x63D0;&#x9192;: &#x8BE5;&#x64CD;&#x4F5C;&#x4E00;&#x5B9A;&#x8981;&#x5728;&#x81EA;&#x5DF1;&#x673A;&#x5668;&#x4E0A;&#x8FDB;&#x884C;,&#x4F7F;&#x7528;&#x4ED6;&#x4EBA;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x6587;&#x4EF6;,&#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x673A;&#x5668;&#x53D8;&#x7816;</h2>
+
+<h2 class="mume-header" id="%E8%AF%A5%E8%AE%BE%E7%BD%AE%E5%9C%A8windows%E4%B8%8B%E8%BF%9B%E8%A1%8C%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87bios%E8%AE%BE%E7%BD%AE%E7%9A%84%E6%81%A2%E5%A4%8D%E5%87%BA%E5%8E%82%E8%AE%BE%E7%BD%AE%E5%A4%8D%E5%8E%9F">&#x8BE5;&#x8BBE;&#x7F6E;&#x5728;windows&#x4E0B;&#x8FDB;&#x884C;,&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Bios&#x8BBE;&#x7F6E;&#x7684;&quot;&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;&quot;&#x590D;&#x539F;</h2>
+
+<h2 class="mume-header" id="%E5%A6%82%E6%9E%9C%E6%96%87%E6%A1%A3%E7%9C%8B%E4%B8%8D%E6%87%82%E9%83%A8%E5%88%86%E6%AD%A5%E9%AA%A4%E4%B8%8D%E7%9F%A5%E9%81%93%E5%A6%82%E4%BD%95%E6%93%8D%E4%BD%9C%E5%BB%BA%E8%AE%AE%E5%81%9C%E6%AD%A2%E4%B8%8D%E8%A6%81%E6%8A%98%E8%85%BE%E8%BF%99%E4%B8%AA%E6%B2%A1%E6%9C%89%E5%AE%B9%E9%94%99%E7%9A%84%E6%9C%BA%E4%BC%9A%E4%B9%9F%E4%B8%8D%E8%A6%81%E6%8A%B1%E6%80%A8%E6%88%91%E5%86%99%E7%9A%84%E7%AE%80%E5%8D%95">&#x5982;&#x679C;&#x6587;&#x6863;&#x770B;&#x4E0D;&#x61C2;,&#x90E8;&#x5206;&#x6B65;&#x9AA4;&#x4E0D;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x64CD;&#x4F5C;,&#x5EFA;&#x8BAE;&#x505C;&#x6B62;,&#x4E0D;&#x8981;&#x6298;&#x817E;,&#x8FD9;&#x4E2A;&#x6CA1;&#x6709;&#x5BB9;&#x9519;&#x7684;&#x673A;&#x4F1A;.&#x4E5F;&#x4E0D;&#x8981;&#x62B1;&#x6028;&#x6211;&#x5199;&#x7684;&#x7B80;&#x5355;</h2>
+
+<h2 class="mume-header" id="0-%E5%89%8D%E5%AF%BC">0&#x3001;&#x524D;&#x5BFC;</h2>
+
+<p>BIOS&#x63D0;&#x53D6;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x7247;&#x6BB5;,&#x8BF4;&#x660E;&#x4FEE;&#x6539;&#x4F9D;&#x636E;,&#x53EF;&#x4EE5;&#x4E0D;&#x770B;&#x76F4;&#x63A5;&#x8FDB;&#x5165;&#x7B2C;&#x4E8C;&#x6B65;,&#x6574;&#x4F53;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x6587;&#x4EF6;2019-bios-1.15-setup.txt&#x6587;&#x4EF6;<br>
+&#x5206;&#x6790;&#x7ED3;&#x679C;&#x4E2D;,&#x914D;&#x7F6E;&#x9879;&#x4FE1;&#x606F;,&#x5173;&#x952E;&#x7ED3;&#x679C;&#x4FE1;&#x606F; <strong>&#x504F;&#x79FB;&#x91CF; 0x107 0x108,&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#x5728; 0x02</strong>:</p>
+<pre class="language-text">One Of: DVMT Pre-Allocated, VarStoreInfo (VarOffset/VarName): 0x107, VarStore: 0x2, QuestionId: 0x268, Size: 1, Min: 0x0, Max 0xFE, Step: 0x0 {05 91 5B 11 6E 11 68 02 02 00 07 01 10 10 00 FE 00}
+      0xAF22F 			Default: DefaultId: 0x0, Value (8 bit): 0x1 {5B 06 00 00 00 01}
+      0xAF235 			One Of Option: 0M, Value (8 bit): 0x0 {09 07 5C 11 00 00 00}
+      0xAF23C 			One Of Option: 32M, Value (8 bit): 0x1 {09 07 5D 11 00 00 01}
+      0xAF243 			One Of Option: 64M, Value (8 bit): 0x2 {09 07 5E 11 00 00 02}
+      0xAF24A 			One Of Option: 4M, Value (8 bit): 0xF0 {09 07 5F 11 00 00 F0}
+      0xAF251 			One Of Option: 8M, Value (8 bit): 0xF1 {09 07 60 11 00 00 F1}
+      0xAF258 			One Of Option: 12M, Value (8 bit): 0xF2 {09 07 61 11 00 00 F2}
+      0xAF25F 			One Of Option: 16M, Value (8 bit): 0xF3 {09 07 62 11 00 00 F3}
+      0xAF266 			One Of Option: 20M, Value (8 bit): 0xF4 {09 07 63 11 00 00 F4}
+      0xAF26D 			One Of Option: 24M, Value (8 bit): 0xF5 {09 07 64 11 00 00 F5}
+      0xAF274 			One Of Option: 28M, Value (8 bit): 0xF6 {09 07 65 11 00 00 F6}
+      0xAF27B 			One Of Option: 32M/F7, Value (8 bit): 0xF7 {09 07 66 11 00 00 F7}
+      0xAF282 			One Of Option: 36M, Value (8 bit): 0xF8 {09 07 67 11 00 00 F8}
+      0xAF289 			One Of Option: 40M, Value (8 bit): 0xF9 {09 07 68 11 00 00 F9}
+      0xAF290 			One Of Option: 44M, Value (8 bit): 0xFA {09 07 69 11 00 00 FA}
+      0xAF297 			One Of Option: 48M, Value (8 bit): 0xFB {09 07 6A 11 00 00 FB}
+      0xAF29E 			One Of Option: 52M, Value (8 bit): 0xFC {09 07 6B 11 00 00 FC}
+      0xAF2A5 			One Of Option: 56M, Value (8 bit): 0xFD {09 07 6C 11 00 00 FD}
+      0xAF2AC 			One Of Option: 60M, Value (8 bit): 0xFE {09 07 6D 11 00 00 FE}
+  0xAF2B3 		End One Of {29 02}
+  0xAF2B5 		One Of: DVMT Total Gfx Mem, VarStoreInfo (VarOffset/VarName): 0x108, VarStore: 0x2, QuestionId: 0x269, Size: 1, Min: 0x1, Max 0x3, Step: 0x0 {05 91 6F 11 70 11 69 02 02 00 08 01 10 10 01 03 00}
+        0xAF2C6 			Default: DefaultId: 0x0, Value (8 bit): 0x2 {5B 06 00 00 00 02}
+        0xAF2CC 			One Of Option: 128M, Value (8 bit): 0x1 {09 07 71 11 00 00 01}
+        0xAF2D3 			One Of Option: 256M, Value (8 bit): 0x2 {09 07 72 11 00 00 02}
+        0xAF2DA 			One Of Option: MAX, Value (8 bit): 0x3 {09 07 73 11 00 00 03}
+  0xAF2E1 		End One Of {29 02}
+</pre>
+<p><strong>&#x8868;&#x683C;0x02&#x4E3A;:</strong></p>
+<pre class="language-text">  0xA7C70 	VarStore: VarStoreId: 0x2 [72C5E28C-7783-43A1-8767-FAD73FCCAFA4], Size: 0x22A, Name: SaSetup {24 1E 8C E2 C5 72 83 77 A1 43 87 67 FA D7 3F CC AF A4 02 00 2A 02 53 61 53 65 74 75 70 00}
+</pre>
+<h2 class="mume-header" id="%E4%B8%80-%E8%A7%A3%E5%8E%8B%E5%B7%A5%E5%85%B7">&#x4E00;&#x3001;&#x89E3;&#x538B;&#x5DE5;&#x5177;</h2>
+
+<p>windows&#x4E2D;&#x89E3;&#x538B;&#x5DE5;&#x5177; H20UVE_100.00.9.2</p>
+<h2 class="mume-header" id="%E4%BA%8C-%E5%AF%BC%E5%87%BA%E7%8E%B0%E6%9C%89biois%E8%AE%BE%E7%BD%AE">&#x4E8C;&#x3001;&#x5BFC;&#x51FA;&#x73B0;&#x6709;BIOIS&#x8BBE;&#x7F6E;</h2>
+
+<p>&#x7528;&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x8FD0;&#x884C;cmd.exe,&#x5E76;&#x901A;&#x8DF3;&#x8F6C;&#x5230;H2OUVE&#x76EE;&#x5F55;,&#x8F93;&#x5165;&#x547D;&#x4EE4;</p>
+<pre class="language-text">  H2OUVE.exe -gv vars-bios-setup.txt
+</pre>
+<h2 class="mume-header" id="%E4%B8%89-%E5%A4%87%E4%BB%BD%E5%BD%93%E5%89%8D%E8%AE%BE%E7%BD%AE">&#x4E09;&#x3001;&#x5907;&#x4EFD;&#x5F53;&#x524D;&#x8BBE;&#x7F6E;</h2>
+
+<p>copy vars-bios-setup.txt vars-bios-setup-change.txt</p>
+<h2 class="mume-header" id="%E5%9B%9B-%E7%BC%96%E8%BE%91-vars-bios-setup-changetxt">&#x56DB;&#x3001;&#x7F16;&#x8F91; vars-bios-setup-change.txt</h2>
+
+<p>&#x4F7F;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x6253;&#x5F00;&#x6587;&#x4EF6;vars-bios-setup-change.txt<br>
+&#x641C;&#x7D22; 72C5E28C-7783-43A1-8767-FAD73FCCAFA4,&#x4E00;&#x5171;&#x6709;&#x4E24;&#x4E2A;,&#x4E00;&#x4E2A;&#x662F;SaSetup,&#x4E00;&#x4E2A;&#x662F;Custom; &#x4FEE;&#x6539;<strong>Setup&#x6BB5;</strong>&#x4E2D;&#x6570;&#x636E;.</p>
+<p>&#x627E;&#x5230;00000100:<br>
+&#x540E;&#x9762;&#x7B2C;8&#x4E2A;&#x6570;&#x5B57;&#x5373;0X107&#x4F4D;:&#x539F;&#x503C;&#x4E3A;01&#xFF0C;&#x4FEE;&#x6539;&#x4E3A;02&#xFF0C;<br>
+&#x540E;&#x9762;&#x7B2C;9&#x4E2A;&#x6570;&#x5B57;&#x5373;0X108&#x4F4D;:&#x539F;&#x503C;&#x4E3A;02&#xFF0C;&#x4FEE;&#x6539;&#x4E3A;03&#xFF0C;<br>
+&#x4FDD;&#x5B58;</p>
+<pre class="language-text">  [084] SaSetup
+        GUID: 72C5E28C-7783-43A1-8767-FAD73FCCAFA4
+        Attributes: 0x7
+        DataSize: 0x22A
+        Data:
+              00000000: 00 00 00 B0 04 00 00 00 01 02 02 00 00 00 08 00 
+              00000010: 10 0E 36 00 2D 00 14 3E 10 E0 00 0B 00 00 08 10 
+              00000020: 08 00 00 00 10 0E 36 00 2D 00 14 3E 10 E0 00 0B 
+              00000030: 00 00 08 10 08 00 00 00 A0 3E 00 00 00 00 01 02 
+              00000040: 00 03 00 03 01 00 00 01 01 00 01 FF 01 03 FF 00 
+              00000050: 00 00 00 00 00 04 04 04 04 03 03 03 03 02 02 02 
+              00000060: 02 00 00 00 00 00 00 00 00 01 01 01 01 00 00 00 
+              00000070: 00 00 00 00 00 02 02 02 02 01 01 01 01 FF FF FF 
+              00000080: FF 01 01 01 01 01 01 01 01 01 07 07 07 07 07 07 
+              00000090: 07 07 07 07 07 07 07 07 07 07 00 00 00 00 07 07 
+              000000A0: 07 07 07 07 07 07 07 07 07 07 07 07 07 07 00 00 
+              000000B0: 00 00 02 02 02 02 02 02 02 02 02 02 02 02 02 02 
+              000000C0: 02 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+              000000D0: B8 0B 00 00 01 02 00 00 02 10 27 02 00 02 00 00 
+              000000E0: 00 00 00 00 00 00 4B 4B 4B 4B 01 00 02 00 03 00 
+              000000F0: 03 00 00 00 00 00 0A 00 0A 00 0A 00 00 00 04 04 
+        &#x5C31;&#x5728;&#x4E0B;&#x4E00;&#x884C;,&#x6807;&#x4E00;&#x4E0B;&#x5E8F;&#x53F7;,&#x4ECE;&#x96F6;&#x5F00;&#x59CB;
+                         0  1  2 3  4   5  6 7  8  9  10 11 12 13 14 15
+              00000100: 04 00 00 1A 00 0B 00 01 02 00 00 01 01 00 00 00 
+                                            &#x5C31;&#x662F;&#x8FD9;&#x4E24;&#x4E2A;&#x6570;&#x5B57;(&#x88AB;markdown&#x903C;&#x7684;&#x8FD9;&#x4E48;&#x63CF;&#x8FF0;)
+              00000110: 02 00 00 00 00 00 00 00 01 02 00 01 04 04 04 04 
+              00000120: 00 00 00 00 07 07 07 07 00 00 00 00 02 02 02 02 
+              00000130: 00 00 00 00 00 00 00 00 03 00 01 01 04 01 2C 01 
+              00000140: 64 00 02 1F 00 01 05 00 00 00 00 01 00 00 01 00 
+              00000150: 00 02 01 01 07 00 01 01 00 00 00 01 00 00 04 0C 
+              00000160: 00 00 00 00 00 01 01 01 01 01 01 01 01 01 01 01 
+              00000170: 01 01 00 01 01 01 01 01 01 01 01 01 01 01 01 00 
+              00000180: 00 01 01 01 00 00 00 00 00 00 00 00 00 00 00 00 
+              00000190: 00 00 00 00 00 00 00 00 01 01 00 01 01 00 04 00 
+              000001A0: 00 00 01 0A 00 DE 00 00 00 00 00 00 FF FF FF FF 
+              000001B0: FF FF FF FF FF FF FF FF FF FF FF FF 0A 0A 06 06 
+              000001C0: AC AC D4 D4 DD DD 0A 0A 06 06 AC AC D4 D4 DD DD 
+              000001D0: 01 00 02 00 30 01 40 00 00 00 00 00 01 00 00 00 
+              000001E0: 01 00 01 01 00 0B 00 01 00 00 01 00 00 00 00 00 
+              000001F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+              00000200: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+              00000210: 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 
+              00000220: 00 00 00 00 00 00 00 01 01 03 
+</pre>
+<h2 class="mume-header" id="%E4%BA%94-%E5%86%99%E5%85%A5bios%E8%AE%BE%E7%BD%AE">&#x4E94;&#x3001;&#x5199;&#x5165;Bios&#x8BBE;&#x7F6E;</h2>
+
+<p>&#x5728;&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;cmd.exe&#x8F93;&#x5165;&#x547D;&#x4EE4;</p>
+<pre class="language-text">  H2OUVE.exe -sv vars-bios-setup-change.txt
+</pre>
+<h2 class="mume-header" id="%E5%85%AD-%E9%87%8D%E5%90%AF%E6%9C%BA%E5%99%A8%E8%BF%9B%E5%85%A5windows">&#x516D;&#x3001;&#x91CD;&#x542F;&#x673A;&#x5668;&#x8FDB;&#x5165;windows</h2>
+
+<h2 class="mume-header" id="%E4%B8%83-%E5%86%8D%E6%AC%A1%E9%87%8D%E5%90%AF%E6%9C%BA%E5%99%A8%E8%BF%9B%E5%85%A5windows">&#x4E03;&#x3001;&#x518D;&#x6B21;&#x91CD;&#x542F;&#x673A;&#x5668;&#x8FDB;&#x5165;windows</h2>
+
+<p>&#x7528;&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;&#x8FD0;&#x884C;cmd.exe,&#x5728;&#x7BA1;&#x7406;&#x5458;&#x6743;&#x9650;cmd.exe&#x8F93;&#x5165;&#x547D;&#x4EE4;</p>
+<pre class="language-text">  H2OUVE.exe -gv vars-bios-setup-veryfiy.txt
+</pre>
+<p>&#x68C0;&#x67E5;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x7684;SaSetup&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x4FEE;&#x6539;&#x3002;</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

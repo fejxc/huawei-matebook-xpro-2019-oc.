@@ -1,0 +1,113 @@
+
+11.3日（0.63R1）
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+使用说明：
+1、五个efi文件使用建议
+   Opencore_maocos1.efi对应配置文件为macosx1.plist,作为定制使用，建议各位使用。加载AirportItlwm.kext
+   Opencore_maocos2.efi对应配置文件为macosx2.plist,作为定制使用，建议各位使用。加载itlwm.kext
+   Opencore_maocos3.efi对应配置文件为macosx3.plist,作为定制使用，建议各位使用。加载AppleIntelWiFi.kext
+   Opencore.efi对应配置文件config.plist,作为安装和保底启动使用，未关闭OC启动菜单，可以在线安装，和通过NTFS上文件安装,加载AirportItlwm.kext
+   Opencore_debug.efi启动，对应配置文件为debugv.plist,建议作为调试优化用。其中OC为Debug版本。加载AirportItlwm.kext
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+更新说明
+1、（OC包）仅针对BigSur支持，不再对Catalina进行支持和验证
+2、（OC包）更新驱动版本.
+2、（OC包）修改了Rrcovery搜索路径为"macOS-Recovery-DMG/11.0",在任意NTFS分区根目录新建目录“macOS-Recovery-DMG/11.0”放入BaseSystem.dmg和BaseSystem.chunklist即可启动
+3、（OC包）csr-active-config强制设置为e7030000
+4、（大补包）增加说明修改偏好设置显示器中图标
+5、（大补包) 增加双mac系统支持脚本，Boot0080ToBoot0081.command
+
+9.22日（0.61R2）
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+使用说明：
+1、五个efi文件使用建议
+   Opencore_maocos1.efi对应配置文件为macosx1.plist,作为定制使用，建议各位使用。加载AirportItlwm.kext
+   Opencore_maocos2.efi对应配置文件为macosx2.plist,作为定制使用，建议各位使用。加载itlwm.kext
+   Opencore_maocos3.efi对应配置文件为mßacosx3.plist,作为定制使用，建议各位使用。加载AppleIntelWiFi.kext
+   Opencore.efi对应配置文件config.plist,作为安装和保底启动使用，未关闭OC启动菜单，可以在线安装，和通过NTFS上文件安装,加载AirportItlwm.kext
+   Opencore_debug.efi启动，对应配置文件为debugv.plist,建议作为调试优化用。其中OC为Debug版本。加载AirportItlwm.kext
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+更新说明
+1、（OC包）调整bigsur和catilina驱动内核版本号规则，bigsur>=20.0.0,Catalina<=19.99.99
+2、（OC包）调整蓝牙WiFi驱动加载顺序，WiFi在前，蓝牙在后
+3、（大补包）Karabiner增加F9开关WiFi配置功能
+4、（大补包）增加了雷电3热插拔支持说明
+5、（大补包）使用refind制作一简化版启动菜单
+
+9.17日（0.61R1）
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+使用说明：
+1、五个efi文件使用建议
+   Opencore_maocos1.efi对应配置文件为macosx1.plist,作为定制使用，建议各位使用。加载AirportItlwm.kext
+   Opencore_maocos2.efi对应配置文件为macosx2.plist,作为定制使用，建议各位使用。加载itlwm.kext
+   Opencore_maocos3.efi对应配置文件为macosx3.plist,作为定制使用，建议各位使用。加载AppleIntelWiFi.kext
+   Opencore.efi对应配置文件config.plist,作为安装和保底启动使用，未关闭OC启动菜单，可以在线安装，和通过NTFS上文件安装,加载AirportItlwm.kext
+   Opencore_debug.efi启动，对应配置文件为debugv.plist,建议作为调试优化用。其中OC为Debug版本。加载AirportItlwm.kext
+2、如果出现开关机慢,感觉不可忍受,可以在配置文件中屏蔽“IntelBluetoothFirmware.kext”,并使用启动菜单中”BootMenu-固定启动MAC前启动内置Liunx热驱动蓝牙并清理WiFi.cfg“热驱动蓝牙
+4、通过NTFS分区方式安装，参加Macrecovery.zip中说明
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+更新说明
+1、（OC包）更新到0.61
+2、（OC包）更新了一堆驱动版本
+3、（OC包）集成AirportItlwm.kext、itlwm.kext、AppleIntelWiFi.kext
+4、（OC包）已经通过驱动名称区分了Catalina和Bigsur
+5、（OC包）调整了配置文件和驱动的加载关系
+   Opencore_maocos1.efi  -> macosx1.plist  -> AirportItlwm.kext
+   Opencore_maocos2.ef  -> macosx2.plist  -> tlwm.kext
+   Opencore_maocos3.efi  -> macosx3.plist  -> AppleIntelWiFi.kext
+   Opencore.efi  -> config.plist  -> AirportItlwm.kext
+   Opencore_debug.efi  -> debugv.plist  -> AirportItlwm.kext
+5、（大补包）启动菜单的缺省配置不在加载linux（蓝牙和Windows热启动影响WiFi两个问题暂时好像不强烈，先去掉）
+6、（大补包）启动菜单增加了不同分辨率的支持
+特别说明：
+winpe&mac Recoverya方式安装启动要求
+NEFS分区下，新建目录LiveCD/LaoZhiang/WinPE，添加WinPE文件
+NEFS分区下，新建目录LiveCD/LaoZhiang/MacOSX，Recovery启动文件
+
+
+6.13日（0.59R3）
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+使用说明：
+1、四个efi文件使用建议
+   Opencore_maocos1.efi对应配置文件为macosx1.plist,作为定制使用，建议各位使用。不加载itlwm.kext
+   Opencore_maocos2.efi对应配置文件为macosx2.plist,作为定制使用，建议各位使用。加载itlwm.kext
+   Opencore.efi对应配置文件config.plist,作为安装和保底启动使用，未关闭OC启动菜单，可以在线安装，和通过NTFS上文件安装
+   Opencore_debug.efi启动，对应配置文件为debugv.plist,建议作为调试优化用。其中OC为Debug版本。
+2、如果出现开关机慢,感觉不可忍受,可以在配置文件中屏蔽“IntelBluetoothFirmware.kext”,并使用启动菜单中”BootMenu-固定启动MAC前启动内置Liunx热驱动蓝牙并清理WiFi.cfg“热驱动蓝牙
+3、config.plist加载了itlwm.kext,通过修改其中配置 itlwm.kext/Contexts/Info.plist,配置Wifi SSID和密码，通过启动菜单的工具-》macosx启动即可启动在线安装
+4、通过NTFS分区方式安装，参加Macrecovery.zip中说明
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+更新说明
+1、（OC包）增加在线和NTFS分区安装方式
+2、（OC包）添加Opencore_maocos2.efi默认加载itlwm.kext
+3、（大补包）启动菜单修改winpe启动方式
+4、（大补包）启动菜单增加Opencore_maocos2.efi配置
+特别说明：
+winpe&mac Recoverya方式安装启动要求
+NEFS分区下，新建目录LiveCD/LaoZhiang/WinPE，添加WinPE文件
+NEFS分区下，新建目录LiveCD/LaoZhiang/MacOSX，Recovery启动文件
+
+
+
+
+6.4日（0.59R2）
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+使用说明：
+1、三个efi文件使用建议
+   Opencore_maocos1.efi对应配置文件为macosx1.plist,作为定制使用，建议各位使用。
+   Opencore.efi对应配置文件configp.list,作为安装和保底启动使用，未关闭OC启动菜单
+   Opencore_debug.efi启动，对应配置文件为debugv.plist,建议作为调试优化用。其中OC为Debug版本。
+2、OC包默认包含加载了itlwm.kext(Z大佬WiFi驱动)，不喜者请自行在配置文件中屏蔽.
+3、如果出现开关机慢,感觉不可忍受,可以在配置文件中屏蔽“IntelBluetoothFirmware.kext”,并使用启动菜单中”BootMenu-固定启动MAC前启动内置Liunx热驱动蓝牙并清理WiFi.cfg“热驱动蓝牙
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+更新说明
+1、（OC包）更新了VirtualSMC，未知原因，驱动作者更新了1.41版本包，版本号未改变
+2、（OC包）Bug修复:config.plist作安装使用时未扫描U盘
+3、（OC包）功能调整,声卡ID调整为76
+4、（OC包）为防止大家用错OpencoreConfigurator，OC目录增加OC及各驱动版本信息
+5、（大补包）增加了one-key-cpufriend_cn-本地化版本
+6、（大补包）增加ALT为Command配置，将"DSDT-changed-Alt=Command版本.aml"改名为“DSDT.aml",复制到oc/acpi目录下，覆盖同名文件
+7、（大补包）删除"WiFi可切换网络不需要重启方案(Z大佬Wifi驱动5-30日晚代码修改版)"目录下itlwm.kext，OC已经默认加载该软件包
+8、（大补包）启动菜单增加“BootMenu-固定启动MAC前启动内置Liunx热驱动蓝牙并清理WiFi.cfg",热驱动蓝牙，使用该配置请在OC配置中将"IntelBluetoothFirmware.kext"屏蔽
+
