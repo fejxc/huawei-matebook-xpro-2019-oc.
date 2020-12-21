@@ -1,36 +1,34 @@
-9.22日（0.61R2）
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>驱动版本信息>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-OpenCore version:  ----------------------------------------------------------------  0.6.1
-OpenCoreDebug version:  -----------------------------------------------------------  0.6.1
-Lilu version:  --------------------------------------------------------------------  1.4.7
-LiluDebug version:  ---------------------------------------------------------------  1.4.7
-VirtualSMC version:  --------------------------------------------------------------  1.1.6
-VoodooPS2Controller version:  -----------------------------------------------------  2.1.6
-WhateverGreen version:  -----------------------------------------------------------  1.4.2
-VoodooI2C version:  ---------------------------------------------------------------  2.4.2
-IntelBluetoothFirmware version:  --------------------------------------------------  1.1.2
-AppleALC version:  ----------------------------------------------------------------  1.5.2
-CodecCommander version:  ------------------------------------------------------  2018-1003
-NoTouchID version:  ---------------------------------------------------------------  1.0.4
-NullEthernet version:  --------------------------------------------------------  2016-1220
-CpuFriend version:  ---------------------------------------------------------------  1.2.1
-USBInjectAll version:  --------------------------------------------------------  2018-1108
-NVMeFix version:  -----------------------------------------------------------------  1.0.3
+0.64R3(2020年12月20日)
+驱动版本信息
+OpenCore version: 0.6.4
+OpenCoreDebug version: 0.6.4
+Lilu version: 1.5.0
+VirtualSMC version: 1.1.9
+VoodooPS2Controller version: 2.1.9
+WhateverGreen version: 1.4.5
+VoodooI2C version: 2.4.2
+IntelBluetoothFirmware version: 1.1.2
+AppleALC version: 1.5.5
+CodecCommander version: 2018-1003
+NoTouchID version: 1.0.4
+NullEthernet version: 2016-1220
+CpuFriend version: 1.2.2
+USBInjectAll version: 2018-1108
+NVMeFix version: 1.0.4
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>驱动下载地址息>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-OpenCore下载地址:    https://github.com/acidanthera/OpenCorePkg/releases/download/0.6.1/OpenCore-0.6.1-RELEASE.zip
-OpenCoreDebug下载地址:    https://github.com/acidanthera/OpenCorePkg/releases/download/0.6.1/OpenCore-0.6.1-DEBUG.zip
-Lilu下载地址:    https://github.com/acidanthera/Lilu/releases/download/1.4.7/Lilu-1.4.7-RELEASE.zip
-LiluDebug下载地址:    https://github.com/acidanthera/Lilu/releases/download/1.4.7/Lilu-1.4.7-DEBUG.zip
-VirtualSMC下载地址:    https://github.com/acidanthera/VirtualSMC/releases/download/1.1.6/VirtualSMC-1.1.6-RELEASE.zip
-VoodooPS2Controller下载地址:    https://github.com/acidanthera/VoodooPS2/releases/download/2.1.6/VoodooPS2Controller-2.1.6-RELEASE.zip
-WhateverGreen下载地址:    https://github.com/acidanthera/WhateverGreen/releases/download/1.4.2/WhateverGreen-1.4.2-RELEASE.zip
-VoodooI2C下载地址:    https://github.com/alexandred/VoodooI2C/releases/download/2.4.2/VoodooI2C-2.4.2.zip
-IntelBluetoothFirmware下载地址:    https://github.com/zxystd/IntelBluetoothFirmware/releases/download/1.1.2/IntelBluetooth.zip
-AppleALC下载地址:    https://github.com/acidanthera/AppleALC/releases/download/1.5.2/AppleALC-1.5.2-RELEASE.zip
-CodecCommander下载地址:    https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/RehabMan-CodecCommander-2018-1003.zip
-NoTouchID下载地址:    https://github.com/al3xtjames/NoTouchID/releases/download/1.0.4/NoTouchID-1.0.4-RELEASE.zip
-NullEthernet下载地址:    https://bitbucket.org/RehabMan/OS-X-Null-Ethernet/downloads/RehabMan-NullEthernet-2016-1220.zip
-CpuFriend下载地址:    https://github.com/acidanthera/CpuFriend/releases/download/1.2.1/CpuFriend-1.2.1-RELEASE.zip
-USBInjectAll下载地址:    https://bitbucket.org/RehabMan/OS-X-USB-Inject-All/downloads/RehabMan-USBInjectAll-2018-1108.zip
-NVMeFix下载地址:    https://github.com/acidanthera/NVMeFix/releases/download/1.0.3/NVMeFix-1.0.3-RELEASE.zip
+驱动下载地址息
+OpenCore下载地址: https://github.com/acidanthera/OpenCorePkg/releases/download/0.6.4/OpenCore-0.6.4-RELEASE.zip
+OpenCoreDebug下载地址: https://github.com/acidanthera/OpenCorePkg/releases/download/0.6.4/OpenCore-0.6.4-DEBUG.zip
+Lilu下载地址: https://github.com/acidanthera/Lilu/releases/download/1.5.0/Lilu-1.5.0-RELEASE.zip
+VirtualSMC下载地址: https://github.com/acidanthera/VirtualSMC/releases/download/1.1.9/VirtualSMC-1.1.9-RELEASE.zip
+VoodooPS2Controller下载地址: https://github.com/acidanthera/VoodooPS2/releases/download/2.1.9/VoodooPS2Controller-2.1.9-RELEASE.zip
+WhateverGreen下载地址: https://github.com/acidanthera/WhateverGreen/releases/download/1.4.5/WhateverGreen-1.4.5-RELEASE.zip
+VoodooI2C下载地址: https://github.com/VoodooI2C/VoodooI2C/releases/download/2.4.2/VoodooI2C-2.4.2.zip
+IntelBluetoothFirmware下载地址: https://github.com/zxystd/IntelBluetoothFirmware/releases/download/1.1.2/IntelBluetooth.zip
+AppleALC下载地址: https://github.com/acidanthera/AppleALC/releases/download/1.5.5/AppleALC-1.5.5-RELEASE.zip
+CodecCommander下载地址: https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads/RehabMan-CodecCommander-2018-1003.zip
+NoTouchID下载地址: https://github.com/al3xtjames/NoTouchID/releases/download/1.0.4/NoTouchID-1.0.4-RELEASE.zip
+NullEthernet下载地址: https://bitbucket.org/RehabMan/OS-X-Null-Ethernet/downloads/RehabMan-NullEthernet-2016-1220.zip
+CpuFriend下载地址: https://github.com/acidanthera/CpuFriend/releases/download/1.2.2/CpuFriend-1.2.2-RELEASE.zip
+USBInjectAll下载地址: https://bitbucket.org/RehabMan/OS-X-USB-Inject-All/downloads/RehabMan-USBInjectAll-2018-1108.zip
+NVMeFix下载地址: https://github.com/acidanthera/NVMeFix/releases/download/1.0.4/NVMeFix-1.0.4-RELEASE.zip
