@@ -1,33 +1,20 @@
-12.19日（0.64R3）
+2020.1.5日（0.65R1）
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 使用说明：
-1、Opencore.efi 支持参数启动
+1、Opencore.efi 支持参数启动 
    无参数           ---完全按照配置文件启动
    AirportItlwm    ---关闭OC菜单，启动参数清空，启用AirportItlwm.kext（如存在）关闭Itlwm.kext、AirPortOpenBSD.kext
    Itlwm           ---关闭OC菜单，启动参数清空，启用Itlwm.kext（如存在）关闭AirportItlwm.kext、AirPortOpenBSD.kext
    AirportOpenBSD  ---关闭OC菜单，启动参数清空，启用AirPortOpenBSD.kext（如存在）关闭AirportItlwm.kext，Itlwm.kext
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-更新说明
-1、（OC包）PlatformInfo.plist 存放三码配置，生成一次后，保存即可，后续不再需要生成
-2、（OC包）添加默认配置，其他配置项如需要修改，自行添加。特别说明，增加配置行，需要整段增加，如添加ACPI信息，请吧ACPI信息填写完整。
-
-
-
-12.16日（0.64R2）
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-使用说明：
-1、Opencore.efi 支持参数启动
-   无参数           ---完全按照配置文件启动
-   AirportItlwm    ---关闭OC菜单，启动参数清空，启用AirportItlwm.kext（如存在）关闭Itlwm.kext、AirPortOpenBSD.kext
-   Itlwm           ---关闭OC菜单，启动参数清空，启用Itlwm.kext（如存在）关闭AirportItlwm.kext、AirPortOpenBSD.kext
-   AirportOpenBSD  ---关闭OC菜单，启动参数清空，启用AirPortOpenBSD.kext（如存在）关闭AirportItlwm.kext，Itlwm.kext
-
+特别提醒：windows下easyuefi和diskgenuis添加启动项都不支持携带参数，linux下efibootmgr可以在启动项中增加参数
+        建议使用简单启动菜单进行启动
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 更新说明
 1、（OC包）Opencore定制编译
 2、（OC包）绑定主板序列号
 2、（OC包）根据Bios DVMT 64M设置自动切换配置
 4、（OC包）更新驱动版本.
-5、（OC包）仅支持Big Sur.
-
+5、（OC包）仅支持BigSur.
+6、（OC包）PlatformInfo.plist 存放三码配置，生成一次后，保存即可，后续不再需要生成
+7、（OC包）添加默认配置，其他配置项如需要修改，自行添加。特别说明，增加配置行，需要整段增加，如添加ACPI信息，请吧ACPI信息填写完整。
+8、（大补包）简单启动菜单更名为BooMenu，去掉子菜单现实，通过扩展主菜单实现启动项扩展，参数为extended，默认不显示，esc或者F2之后现实全部菜单。
